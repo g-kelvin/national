@@ -68,7 +68,12 @@
         <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html"  >About</a></li>
+          <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="about.html">About </a></li>
+              <li><a href="visionandmission.html">Vision & Mission</a></li>
+            </ul>
+          </li>
           <li><a href="services.html">Services</a></li>
           <li><a href="https://shop.nationalelectronics.so/">Our Shop</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -120,7 +125,7 @@
           $subject = $_POST['subject'];
           $message = $_POST['message']; 
 
-          $to = "shop@nationalelectronics.so";
+          $to = "info@nationalelectronics.so";
           // $subject = 'Message from GLEE HYGIENE SOLUTIONS LTD'." , ";
           $msg ="Name: ".$name." , "."Email: ".$email." , "." Subject: ".$subject." wrote the following: ".$message;
           $headers ="From: ".$email;
